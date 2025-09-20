@@ -160,16 +160,16 @@ models = [
 
 # Emissions in kg CO₂
 prepare = np.array([
-    0.0006707278, 0.0002248349, 0.0009992197,
-    0.0010812484, 0.0007863351, 0.0007320325, 0.0016524806
+    0.0008878775, 0.0009977272, 0.0016833768,
+    0.0013690235, 0.0008006676, 0.0011266289, 0.0012779421
 ])
 develop = np.array([
-    0.0557422935, 0.0197688407, 0.0392702831,
-    0.0852752304, 0.1084011005, 0.0490018958, 0.0654282921
+    0.0575157394, 0.0802748723, 0.0336183266,
+    0.0847173574, 0.0700260162, 0.0846065945, 0.0613673131
 ])
 deploy = np.array([
-    0.0582950112, 0.0204320201, 0.0409393206,
-    0.0875567535, 0.1107930351, 0.000001, 0.000003
+    0.0603698626, 0.0827354819, 0.0359147953,
+    0.0872453316, 0.0723765033, 0.000003, 0.000003
 ])
 
 x = np.arange(len(models))
@@ -207,7 +207,8 @@ fig.patch.set_facecolor('white')
 # Clean design
 ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
-ax.yaxis.grid(True, linestyle='--', alpha=0.3)
+# ax.yaxis.grid(True, linestyle='--', alpha=0.3)
+ax.yaxis.grid(False)
 
 # Legend with box
 legend = ax.legend(frameon=True, fontsize=12)
