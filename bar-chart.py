@@ -154,7 +154,7 @@ import numpy as np
 
 # Model names
 models = [
-    'EffNetV2M', 'EffNetV2S', 'MobileNet',
+    'EfficientNetV2M', 'EfficientNetV2S', 'MobileNet',
     'ResNet50', 'ResNet101', 'YOLO-11n', 'YOLO-8n', 'YOLOv8n-CBAM'
 ]
 
